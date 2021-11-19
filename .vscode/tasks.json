@@ -1,0 +1,17 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "start_react_application",
+      "command": "yarn",
+      "args": ["start"],
+      "type": "shell"
+    },
+    {
+      "label": "Build",
+      "dependsOn": [
+        "start_react_application"
+      ]
+    }
+  ]
+}

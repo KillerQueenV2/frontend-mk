@@ -1,0 +1,112 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  
+  @media (max-height: 575px) {
+    justify-content: flex-start;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+    max-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .1);
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    padding: 50px;
+
+    .customInput,
+    .customInputDisabled {
+      background: rgba(255, 255, 255, 0.5);
+      font-size: 14px;
+      text-align: center;
+      height: 40px;
+      color: #333;
+      box-shadow: 0 0 7px rgba(0, 0, 0, .1);
+      border-radius: 5px;
+      outline: none;
+      border: none;
+      padding: 0 10px;
+      width: 80%;
+      transition: all 0.3s;
+      margin: 10px;
+    }
+      
+    .customInput:hover {
+      background: rgba(255, 255, 255, 0.7);
+    }
+      
+    .customInput:focus {
+      background: rgba(255, 255, 255, 0.9);
+    }
+
+    .customInputDisabled {
+      background: #d9dce9;
+    }
+
+    .save {
+      border-radius: 5px;
+      background: #2ed573;
+      box-shadow: 0 0 1px 1px #2ed573;
+      margin: 10px 0;
+      color: #fff;
+      padding: 10px;
+      outline: none;
+      border: none;
+
+      &:hover {
+        cursor: pointer;
+        background: #26c066;
+      }
+
+      &:active {
+        background: #3fd97f;
+      }
+
+      &:disabled {
+        cursor: not-allowed;
+        background: #59db8f;
+      }
+    }
+
+    .logoutbtn {
+      border-radius: 5px;
+      background: transparent;
+      box-shadow: 0 0 1px 1px #ff4747;
+      color: #ff4747;
+      padding: 10px;
+      margin-bottom: 10px;
+      outline: none;
+      border: none;
+
+      &:hover {
+        cursor: pointer;
+        background: #ffeaea;
+        background: rgba(255, 255, 255, .1);
+      }
+
+      &:active {
+        background: #fce2e2;
+        background: rgba(0, 0, 0, .05);
+      }
+
+      &:disabled {
+        cursor: not-allowed;
+        background: #8ec5fc;
+      }
+    }
+
+    .success {
+      color: #26c066;
+    }
+
+    .error {
+      color: #c02626;
+    }
+  }
+}

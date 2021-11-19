@@ -1,0 +1,40 @@
+.advertising {
+  display: flex;
+  flex-wrap: wrap;
+  width: 76%;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 10px;
+  color: #111;
+}
+
+.productList {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  margin-bottom: 5%;
+  width: 80%;
+  
+  .cardContainer {
+    display: flex;
+    width: calc(100% / 5);
+    justify-content: space-around;
+    margin: 25px 0;
+
+    @media (max-width: 1600px) {
+      width: calc(100% / 4);
+    }
+  
+    @media (max-width: 1300px) {
+      width: calc(100% / 3);
+    }
+  
+    @media (max-width: 1000px) {
+      width: calc(100% / 2);
+    }
+  
+    @media (max-width: 680px) {
+      width: calc(100%);
+    }
+  }
+}

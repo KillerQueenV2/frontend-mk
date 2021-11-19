@@ -1,0 +1,46 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: 20vh;
+  align-items: center;
+  margin: auto;
+  width: 409px;
+  height: 429px;
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .05);
+
+  .logoContainer {
+    margin-top: 15%;
+
+    span {
+      font-size: 80px;
+    }
+  }
+
+  Form {
+    flex-direction: column;
+    display: flex;
+    width: 60%;
+
+    input {
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100%;
+      margin: 10px 0;
+    }
+
+    button {
+      margin: 10px;
+    }
+
+    a { 
+      color: #333;
+      text-decoration: none;
+      font-size: 14px;
+    }
+  }
+}

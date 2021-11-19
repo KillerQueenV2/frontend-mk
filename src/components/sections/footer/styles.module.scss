@@ -1,0 +1,61 @@
+footer {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 100px;
+  left: 80px;
+  right: 0;
+  background: #2f3542;
+  color: #8899aa;
+  width: calc(100% - 80px);
+  height: 300px;
+
+  .container {
+    text-align: center;
+    font-size: 80px;
+    margin-top: 10px;
+    color: #8899aa;
+
+    .socialNetworks {
+      color: #8899aa;
+      font-size: 35px;
+
+      svg {
+        margin: 0 20px;
+
+        &:hover {
+          color: #b4bfca;
+          cursor: pointer;
+        }
+      }
+    }
+
+    .footerMessage {
+      color: #8899aa;
+      font-size: 14px;
+      margin-top: 0px;
+      margin-bottom: 30px;
+    }
+
+    .copyright {
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 200px;
+      line-height: 20px;
+      font-size: 10px;
+      text-align: center;
+    }
+  }
+
+  .diviser {
+    position: relative;
+    background: #8899aa;
+    margin: 10px 0;
+    width: 75%;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 1px;
+  }
+}

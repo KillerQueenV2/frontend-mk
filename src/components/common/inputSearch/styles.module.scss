@@ -1,0 +1,48 @@
+.container {
+  position: absolute;
+  left: 45%;
+  width: 380px;
+  transform: translateX(-50%);
+  background: #57606f;
+  font-size: 16px;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  padding: 8px 20px;
+  transition: all 0.3s;
+
+  &::placeholder {
+    color: #a4b0be;
+  }
+
+  &:hover {
+    background: #5a6372;
+    cursor: pointer;
+  }
+
+  &:focus {
+    background: #656f81;
+    cursor: auto;
+    width: 30%;
+  }
+
+  @media (max-width: 830px) {
+    left: 40%;
+    width: 40%;
+
+    &:focus {
+      background: #747d8c;
+      width: 46%;
+    }
+  }
+
+  @media (max-width: 568px) {
+    left: 40%;
+    width: 40%;
+  }
+
+  @media (max-width: 416px) {
+    left: 30%;
+  }
+}

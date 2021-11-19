@@ -1,0 +1,130 @@
+.card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.07);
+  padding: 10px 0;
+  width: 230px;
+  background: rgba(255, 255, 255, 0.2);
+  transition: all 0.5s;
+  border-radius: 10px;
+}
+.card:hover {
+  transform: scale(1.05);
+  background: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+.card:active {
+  transition: all 0.1s;
+}
+.card a {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-decoration: none;
+  width: 100%;
+  color: #252525;
+}
+@media (max-width: 680px) {
+  .card {
+    width: 100%;
+    padding: 10px 20px;
+  }
+}
+.card .productImage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  height: 160px;
+}
+@media (max-width: 680px) {
+  .card .productImage {
+    width: 100%;
+    height: 100%;
+  }
+}
+.card .productImage img {
+  width: 80%;
+  height: 80%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+.card .productInfo {
+  display: flex;
+  padding-top: 10px;
+  flex-direction: column;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  position: relative;
+  width: 70%;
+  height: 48px;
+}
+@media (max-width: 680px) {
+  .card .productInfo {
+    width: 100%;
+  }
+}
+.card .productInfo .productName {
+  font-size: 16px;
+}
+.card .productInfo .productPrice {
+  font-size: 22px;
+}
+.card .productInfo .addToCart {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  background: #2ed573;
+  border: none;
+  outline: none;
+  right: 0;
+  width: 30px;
+  height: 60%;
+}
+.card .productInfo .addToCart svg {
+  color: #fff;
+  font-size: 20px;
+}
+.card .productInfo .addToCart:hover {
+  background: #3fd97f;
+  cursor: pointer;
+}
+.card .productInfo .addToCart:active {
+  background: #2ad571;
+}
+.card .productInfo .addToCart[disabled] {
+  background: #7fe6aa;
+  cursor: default;
+}
+.card .productInfo .removeFromCart {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  background: #d84848;
+  border: none;
+  outline: none;
+  right: 0;
+  width: 30px;
+  height: 60%;
+}
+.card .productInfo .removeFromCart svg {
+  color: #fff;
+  font-size: 20px;
+}
+.card .productInfo .removeFromCart:hover {
+  background: #d93f3f;
+  cursor: pointer;
+}
+.card .productInfo .removeFromCart:active {
+  background: #d52a2a;
+}
+.card .productInfo .removeFromCart[disabled] {
+  background: #e48181;
+  cursor: default;
+}

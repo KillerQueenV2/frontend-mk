@@ -1,0 +1,16 @@
+header {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  right: 0;
+  height: 80px;
+  background: #2f3542;
+  width: calc(100vw - 80px);
+  z-index: 3;
+}
+header .logo {
+  position: absolute;
+  right: 40px;
+  color: #fff;
+  font-size: 40px;
+}
